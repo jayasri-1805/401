@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(to right, #0f3d3e, #1b6b6b);
+    }
+    .container {
+      background-color: #132a2e;
+      padding: 30px 25px;
+      border-radius: 12px;
+      width: 340px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+      text-align: center;
+      color: #e4f4f3;
+    }
+    h2 {
+      margin-bottom: 25px;
+      color: #b2f7ef;
+      font-size: 26px;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+    label {
+      text-align: left;
+      margin-bottom: 5px;
+      font-size: 14px;
+      color: #aadbd6;
+    }
+    input {
+      padding: 12px;
+      margin-bottom: 15px;
+      border: none;
+      border-radius: 8px;
+      background-color: #e7f6f5;
+      font-size: 15px;
+      color: #1b1b1b;
+    }
+    input::placeholder {
+      color: #888;
+    }
+    button {
+      padding: 12px;
+      background-color: #28b07e;
+      color: #fff;
+      font-size: 16px;
+      font-weight: bold;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    button:hover {
+      background-color: #239b6b;
+    }
+    p {
+      margin-top: 15px;
+      font-size: 14px;
+      color: #d0f0ec;
+    }
+    a {
+      color: #71ffb2;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Login to Your Account</h2>
+    <form action="dashboard.html" method="GET">
+      <label for="username">Username</label>
+      <input type="text" id="username" name="username" placeholder="Enter your username" required>
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" placeholder="Enter your password" required>
+      <button type="submit">Login</button>
+    </form>
+    <p>Don't have an account? <a href="signup.html">Sign up</a></p>
+  </div>
+</body>
+</html>
